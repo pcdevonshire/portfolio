@@ -42,7 +42,11 @@
         </div>
     </header>
     <section class="name">
-        <img src="images/hero.png" alt="guy at computer">
+        <picture>
+            <source srcset="images/hero.webp" type="image/webp">
+            <source srcset="images/hero.png" type="image/png">
+            <img src="images/hero.png" alt="guy at computer">
+        </picture>
         <span>
             <h1>PRESTON<br>DEVONSHIRE</h1>
             <div class="border-left">
@@ -127,6 +131,7 @@
                         <p>Eyesore</p>
                         <p>Front End Web Developer</p>
                         <ul>
+                            <li>Created custom WordPress sites from design</li>
                             <li>Applied updates to live and dev sites as needed</li>
                             <li>Created HTML / CSS for landing pages from PSDs</li>
                             <li>Debugged errors in code</li>
@@ -152,39 +157,114 @@
     <section id="projects">
         <h1>My Projects</h1>
         <div class="border-left">
-            <p>A collection of my favorite projects that I've worked on recently.</p>
+            <p>A collection of my favorite projects that I've worked on.
+                <br>
+                <span>*disabled code links are private repos</span>
+            </p>
         </div>
-        <div class="grid">
-            <div class="red-square">
-                <img src="images/redsquare.jpg" alt="RedSquare">
-                <div class="code">
-                    <a href="https://pcdevonshire.github.io/Red-Square/" target="_blank" rel="noreferrer">Demo</a>
-                    <span>|</span>
-                    <a href="https://github.com/pcdevonshire/Red-Square" target="_blank" rel="noreferrer">Code</a>
+        <div class="projects">
+            <div>
+                <div class="project">
+                    <picture>
+                        <source srcset="images/seaisland.webp" type="image/webp">
+                        <source srcset="images/seaisland.png" type="image/png">
+                        <img src="images/seaisland.png" alt="Sea Island Properties" loading="lazy">
+                    </picture>
+                    <div class="code">
+                        <a href="https://seaisland2022.webdevlink.com/" target="_blank" rel="noreferrer">Demo</a>
+                        <span>|</span>
+                        <a class="disabled">Code</a>
+                    </div>
+                </div>
+                <div class="description">
+                    <h4>Description</h4>
+                    <p>Sea Island Properties - Redesign of exisiting WordPress site</p>
+                    <br>
+                    <h4>Skills Used</h4>
+                    <ul>
+                        <li>WordPress</li>
+                        <li>IDX / PHP</li>
+                        <li>CSS &amp; SASS</li>
+                        <li>jQuery</li>
+                    </ul>
                 </div>
             </div>
-            <div class="loopstudios">
-                <img src="images/loopstudios.jpg" alt="Loopstudios">
-                <div class="code">
-                    <a href="https://pcdevonshire.github.io/Loopstudios/" target="_blank" rel="noreferrer">Demo</a>
-                    <span>|</span>
-                    <a href="https://github.com/pcdevonshire/Loopstudios" target="_blank" rel="noreferrer">Code</a>
+            <div>
+                <div class="project">
+                    <picture>
+                        <source srcset="images/Lewis.webp" type="image/webp">
+                        <source srcset="images/Lewis.png" type="image/png">
+                        <img src="images/Lewis.png" alt="Lewis University" loading="lazy">
+                    </picture>
+                    <div class="code">
+                        <a href="https://eyesoreinc.com/DEMO/LewisU/templates/index.htm" target="_blank" rel="noreferrer">Demo</a>
+                        <span>|</span>
+                        <a class="disabled">Code</a>
+                    </div>
+                </div>
+                <div class="description">
+                    <h4>Description</h4>
+                    <p>Lewis University - Custom HTML templates for new Lewis site</p>
+                    <br>
+                    <h4>Skills Used</h4>
+                    <ul>
+                        <li>HTML</li>
+                        <li>Mobile-first CSS</li>
+                        <li>JavaScript</li>
+                        <li></li>
+                    </ul>
                 </div>
             </div>
-            <div class="sunnyside">
-                <img src="images/sunnyside.jpg" alt="Sunnyside">
-                <div class="code">
-                    <a href="https://pcdevonshire.github.io/Sunnyside/" target="_blank" rel="noreferrer">Demo</a>
-                    <span>|</span>
-                    <a href="https://github.com/pcdevonshire/Sunnyside" target="_blank" rel="noreferrer">Code</a>
+            <div>
+                <div class="project">
+                    <picture>
+                        <source srcset="images/msblaw.webp" type="image/webp">
+                        <source srcset="images/msblaw.png" type="image/png">
+                        <img src="images/msblaw.png" alt="MSB Law" loading="lazy">
+                    </picture>
+                    <div class="code">
+                        <a href="https://msb-law.com/" target="_blank" rel="noreferrer">Live</a>
+                        <span>|</span>
+                        <a class="disabled">Code</a>
+                    </div>
+                </div>
+                <div class="description">
+                    <h4>Description</h4>
+                    <p>MSB Law - Redesign of exisiting WordPress site</p>
+                    <br>
+                    <h4>Skills Used</h4>
+                    <ul>
+                        <li>WordPress</li>
+                        <li>Elementor</li>
+                        <li>CSS &amp; SASS</li>
+                        <li></li>
+                    </ul>
                 </div>
             </div>
-            <div class="insure">
-                <img src="images/insure.jpg" alt="Insure">
-                <div class="code">
-                    <a href="https://pcdevonshire.github.io/Insure/" target="_blank" rel="noreferrer">Demo</a>
-                    <span>|</span>
-                    <a href="https://github.com/pcdevonshire/Insure" target="_blank" rel="noreferrer">Code</a>
+            <div>
+                <div class="project">
+                    <picture>
+                        <source srcset="images/hairpiece.webp" type="image/webp">
+                        <source srcset="images/hairpiece.png" type="image/png">
+                        <img src="images/hairpiece.png" alt="Hairpiece Warehouse" loading="lazy">
+                    </picture>
+                    <div class="code">
+                        <a href="https://www.hairpiecewarehouse.com/" target="_blank" rel="noreferrer">Live</a>
+                        <span>|</span>
+                        <a class="disabled">Code</a>
+                    </div>
+                </div>
+                <div class="description">
+                    <h4>Description</h4>
+                    <p>Hairpiece Warehouse - Added functionality to custom products and added custom mobile pages</p>
+                    <br>
+                    <h4>Skills Used</h4>
+                    <ul>
+                        <li>Elementor</li>
+                        <li>CSS &amp; SASS</li>
+                        <li>jQuery</li>
+                        <li>PHP</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -194,7 +274,7 @@
         <a href="mailto:pcdevonshire@gmail.com" id="email">pcdevonshire@gmail.com</a>
     </section>
     <footer>
-        <p>© 2021 Preston Devonshire All Rights Reserved</p>
+        <p>© 2022 Preston Devonshire All Rights Reserved</p>
     </footer>
     <script>
         function darkMode() {

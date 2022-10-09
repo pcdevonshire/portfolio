@@ -143,7 +143,7 @@ h1 {
     position: relative;
 }
 
-.name > img {
+.name picture img {
     margin: -10em auto 1em auto;
     -webkit-filter: drop-shadow(0 0.25em 0.75rem var(--shadow));
             filter: drop-shadow(0 0.25em 0.75rem var(--shadow));
@@ -326,11 +326,15 @@ h1 {
     padding-bottom: 1em;
 }
 
-.red-square, .loopstudios, .sunnyside, .insure {
+#projects .border-left span {
+    font-size: 1rem;
+}
+
+.project {
     position: relative;
 }
 
-.grid img {
+.projects img {
     border-radius: 10px;
     margin: 5em auto 3em auto;
     -webkit-filter: drop-shadow(0 0.25em 0.75rem rgba(0, 0, 0, 0.25));
@@ -359,6 +363,18 @@ h1 {
 
 .code span {
     color: var(--orange) !important;
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.description * {
+    font-size: 1.25rem;
+}
+
+.description li {
+    color: var(--gray);
 }
 
 /* ----- Contact styles ----- */
@@ -433,7 +449,7 @@ footer {
         height: 500px;
     }
 
-    .name > img {
+    .name picture img {
         margin: -20em auto 1em auto;
     }
     
@@ -479,38 +495,16 @@ footer {
         font-size: 1.25rem;
     }
 
-    .grid {
-        display: -ms-grid;
-        display: grid;
-        -ms-grid-columns: 1fr clamp(2em, 4vw, 5em) 1fr;
-        grid-template-columns: 1fr 1fr;
-        -ms-grid-rows: 1fr clamp(2em, 4vw, 5em) 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: clamp(2em, 4vw, 5em);
+    .projects > div {
+        margin-bottom: 5em;
     }
 
-    .grid > *:nth-child(1) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 1;
-    }
-
-    .grid > *:nth-child(2) {
-        -ms-grid-row: 1;
-        -ms-grid-column: 3;
-    }
-
-    .grid > *:nth-child(3) {
-        -ms-grid-row: 3;
-        -ms-grid-column: 1;
-    }
-
-    .grid > *:nth-child(4) {
-        -ms-grid-row: 3;
-        -ms-grid-column: 3;
-    }
-
-    .grid img {
+    .projects img {
         margin: 0;
+    }
+
+    .description * {
+        font-size: 1.5rem;
     }
 
     #contact {
@@ -543,7 +537,7 @@ footer {
         height: 700px;
     }
 
-    .name > img {
+    .name picture img {
         margin: -35em auto 1em auto;
     }
 
@@ -699,6 +693,24 @@ footer {
         margin: 0 auto 7.5em auto;
     }
 
+    .projects > div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        gap: clamp(2em, 4vw, 5em);
+        margin-bottom: 5em;
+    }
+
+    .projects > div > div {
+        width: 50%;
+    }
+
     p {
         font-size: 2rem;
     }
@@ -726,6 +738,10 @@ footer {
 
     .code a, .code span {
         color: #F6F5F1;
+    }
+
+    .description * {
+        font-size: 2rem;
     }
 
     #contact {
